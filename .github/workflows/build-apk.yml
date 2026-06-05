@@ -20,11 +20,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2. setup Node.js
+      # 2. setup Node.js (harus sama dengan versi lokal agar lockfile kompatibel)
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 24
           cache: 'npm'
 
       # 3. setup Java (dibutuhkan oleh Gradle)
