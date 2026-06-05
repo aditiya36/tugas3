@@ -40,7 +40,7 @@ jobs:
 
       # 5. install dependencies
       - name: Install dependencies
-        run: npm ci
+        run: npm  install && git diff package-lock.json
 
       # 6. build Astro (generate dist/)
       - name: Build web app
