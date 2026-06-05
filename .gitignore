@@ -24,7 +24,6 @@ pnpm-debug.log*
 .idea/
 
 # Capacitor - Android build artifacts
-# (android/ source HARUS di-commit untuk GitHub Actions cloud build)
 android/app/build/
 android/.gradle/
 android/build/
