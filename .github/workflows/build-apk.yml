@@ -26,12 +26,12 @@ jobs:
         with:
           node-version: 24
 
-      # 3. setup Java (dibutuhkan oleh Gradle)
+      # 3. setup Java (dibutuhkan oleh Gradle, Capacitor modern butuh Java 21)
       - name: Setup Java JDK
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
-          java-version: '17'
+          java-version: '21'
 
       # 4. setup Android SDK
       - name: Setup Android SDK
